@@ -1,0 +1,263 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" >
+</head>
+<body>
+    <div class="page-wrapper">
+        <header id="header">
+            <div class="logo">
+                <img id="header-img" src="./images/aircraft-1293790_1920.png"  alt="page logo of aircraft.." width="70" height="50" />
+                <h1 class="logo-name">Airbus</h1>
+            </div>
+   <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#contact">How It Works</a></li>
+            <li><a class="nav-link" href="#price">Pricing</a></li>
+          </ul>
+        </nav>
+    </header>
+    <section class="form" id="contact">
+        <h2>Buy Best Aircraft</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input name="email" id="email" type="email" placeholder="Enter your email address" />
+            <input id="submit" type="submit" />
+        </form>
+    </section>
+   
+    
+    <div class="container" id="features">
+        <section id="product-review">
+            <ul>
+                <li>
+                    <img src="./images/inovation.png" alt="">
+                    <h2>Technological Innovation</h2>
+                    <p>Airbus is known for integrating cutting-edge technology into its aircraft designs. This includes advancements in aerodynamics, use of composite materials, and state-of-the-art avionics systems. Aircraft such as the A350 XWB feature carbon-fiber-reinforced polymer fuselage and wings, which enhance fuel efficiency and performance.</p>
+                </li>
+                <li>
+                    <img src="./images/comfort.png" alt="">
+                    <h2>Passenger Comfort</h2>
+                    <p>Airbus aircraft are designed to offer superior passenger comfort. Features such as wider seats, advanced air filtration systems, reduced cabin noise, and customizable lighting contribute to a more pleasant flying experience. The Airbus A380, for example, provides spacious cabins that can be configured with amenities like onboard lounges and private suites.</p>
+              
+            </li>
+            </li>
+            <li>
+                <img src="./images/environment.png" alt="">
+                <h2>Environmental Efficiency</h2>
+                <p>Airbus places a strong emphasis on environmental sustainability. Their aircraft are designed to minimize environmental impact through improved fuel efficiency and reduced emissions. The A320neo family, equipped with new-generation engines and Sharklet wingtip devices, delivers significant fuel savings and lower CO2 emissions compared to previous models.</p>
+            </li>
+        </li>
+    </ul>
+</section>
+<div class="video">
+    <iframe id="video" src="https://www.youtube.com/embed/QYN7Hm3zMaU?si=-sF-MfNen_2PDYXP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div id="price">
+    <div class="box">
+        <div>
+            <h3>Airbus A318</h3>
+        </div>
+        <h2>$75.1M</h2>
+        <img src="./images/A318_Air_France.png" alt="A318_Air_France" />
+    </div>
+    <div class="box">
+        <div>
+            <h3>Airbus A340-300</h3>
+        </div>
+        <h2>$219M</h2>
+        <img src="./images/A340-300_Air_Tahiti_Nui_2.png" alt="Air A340-300_Air_Tahiti_Nui_2" />
+    </div>
+    <div class="box">
+        <div>
+            <h3>Boeing 777-300ER</h3>
+        </div>
+        <h2>$375.5M</h2>
+        <img src="./images/B777-300ER_Cathay_Pacific.png" alt="B777-300ER_Cathay_Pacific" />
+    </div>
+</div>
+
+<footer id="footer">
+    <ul>
+        <li><a href="#">privacy</a> </li>
+        <li><a href="#">Terms</a> </li>
+        <li><a href="#">contact</a></li>
+    </ul>
+    <p>Copyright 2024, AirBus Aircraft</p>
+</footer>
+</div>
+</div>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.page-wrapper {
+  position: relative;
+}
+header {
+  position: relative;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+
+.logo {
+  float: left;
+  padding: 20px;
+}
+nav,
+h1 {
+  float: right;
+}
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the navbar is on top of other content */
+  background-color: #333; /* Example background color */
+  color: white; /* Example text color */
+  padding: 10px 0;
+}
+.nav-link {
+  display: inline-block;
+  padding-left: 20px;
+
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  float: left;
+}
+.logo-name {
+  align-items: center;
+  margin-left: 20px;
+}
+input {
+  width: fit-content;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-height: 200px;
+  margin: 0;
+  padding: 0;
+}
+.form h2 {
+  margin-bottom: 20px;
+}
+.form input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+.form input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: yellow;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#product-review li {
+  margin: 50px;
+  list-style: none;
+  float: inline-end;
+}
+#product-review li p {
+  margin-top: 10px;
+  color: gray;
+}
+#product-review li img {
+  width: 100px;
+  margin-right: 30px;
+}
+.video {
+  margin: 0 auto;
+}
+
+@media(max-width: 1000px){
+    #video{
+        height: 100px;
+        width: 120px;
+    }
+}
+#video {
+  height: 315px;
+  width: 560px;
+}
+#price {
+  margin: 40px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.box{
+  width: 300px;
+  height: 300px;
+  background-color: aliceblue;
+  gap: 10px;
+  border: 1px solid black;
+}
+.box div{
+background-color: lightgray;
+text-align: center;
+padding: 10px;
+}
+.box h2{
+    text-align: center;
+    margin-top: 5px;
+}
+.box img{
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+#footer {
+  padding: 10px;
+  text-align: end;
+  height: 70px;
+  background-color: lightgray;
+}
+#footer li {
+  display: inline-block;
+}
+
+
+** end of undefined **
+
