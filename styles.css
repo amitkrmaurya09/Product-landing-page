@@ -148,3 +148,7 @@ padding: 10px;
 #footer li {
   display: inline-block;
 }
+#footer a{
+    color: blue;
+    font-weight: normal;
+}
